@@ -4839,7 +4839,8 @@ function AgendaView(element, calendar, viewName) {
 			slotScroller.scrollTop(top);
 		}
 		scroll();
-		setTimeout(scroll, 0); // overrides any previous scroll state made by the browser
+		// timeout 25 is needed to  wait for  view initialisation
+		setTimeout(scroll, 25); // overrides any previous scroll state made by the browser
 	}
 	
 	
